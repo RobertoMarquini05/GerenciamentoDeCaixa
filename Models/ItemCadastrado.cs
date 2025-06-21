@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Caixa.Models
 {
-    public class Item
+    public class ItemCadastrado
     {
         public Guid Id { get; set; }
         public string Nome { get; set; }
@@ -15,7 +15,7 @@ namespace Caixa.Models
         public bool Disponivel { get; set; }
         public DateTime CreatedAt { get; set; }
 
-        public Item(string nome, double valor, int quantidade) 
+        public ItemCadastrado(string nome, double valor, int quantidade) 
         {
             Id = Guid.NewGuid();
             Nome = nome;

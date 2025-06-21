@@ -27,7 +27,7 @@ namespace Caixa.View.Item
         #region Metodos
         private void VisualizacaoItem_Load(object sender, EventArgs e)
         {
-            List<Models.Item> listaItensCadastrados = _itemManager.GetListaItens();
+            List<ItemCadastrado> listaItensCadastrados = _itemManager.GetListaItens();
             foreach (var item in listaItensCadastrados)
             {
                 dgvItens.Rows.Add(item.Nome, item.Valor, item.Quantidade);

@@ -36,6 +36,11 @@ namespace Caixa.View
             VisualizacaoItem visualizacaoItem = new(itemManager);
             visualizacaoItem.ShowDialog();
         }
+        private void btnEditarItens_Click(object sender, EventArgs e)
+        {
+            EditarItens editarItens = new (itemManager);
+            editarItens.ShowDialog();
+        }
         #endregion
     }
 }

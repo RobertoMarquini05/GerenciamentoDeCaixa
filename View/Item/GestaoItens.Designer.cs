@@ -30,6 +30,7 @@
         {
             btnCadastrarItem = new Button();
             btnVisualizarItens = new Button();
+            btnEditarItens = new Button();
             SuspendLayout();
             // 
             // btnCadastrarItem
@@ -52,11 +53,22 @@
             btnVisualizarItens.UseVisualStyleBackColor = true;
             btnVisualizarItens.Click += btnVisualizarItens_Click;
             // 
+            // btnEditarItens
+            // 
+            btnEditarItens.Location = new Point(12, 136);
+            btnEditarItens.Name = "btnEditarItens";
+            btnEditarItens.Size = new Size(229, 43);
+            btnEditarItens.TabIndex = 2;
+            btnEditarItens.Text = "Editar Itens";
+            btnEditarItens.UseVisualStyleBackColor = true;
+            btnEditarItens.Click += btnEditarItens_Click;
+            // 
             // GestaoItens
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(btnEditarItens);
             Controls.Add(btnVisualizarItens);
             Controls.Add(btnCadastrarItem);
             Name = "GestaoItens";
@@ -68,5 +80,6 @@
 
         private Button btnCadastrarItem;
         private Button btnVisualizarItens;
+        private Button btnEditarItens;
     }
 }
