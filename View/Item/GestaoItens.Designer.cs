@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             btnCadastrarItem = new Button();
+            btnVisualizarItens = new Button();
             SuspendLayout();
             // 
             // btnCadastrarItem
@@ -41,11 +42,22 @@
             btnCadastrarItem.UseVisualStyleBackColor = true;
             btnCadastrarItem.Click += btnCadastrarItem_Click;
             // 
+            // btnVisualizarItens
+            // 
+            btnVisualizarItens.Location = new Point(12, 74);
+            btnVisualizarItens.Name = "btnVisualizarItens";
+            btnVisualizarItens.Size = new Size(229, 43);
+            btnVisualizarItens.TabIndex = 1;
+            btnVisualizarItens.Text = "Visualizar Itens";
+            btnVisualizarItens.UseVisualStyleBackColor = true;
+            btnVisualizarItens.Click += btnVisualizarItens_Click;
+            // 
             // GestaoItens
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(btnVisualizarItens);
             Controls.Add(btnCadastrarItem);
             Name = "GestaoItens";
             Text = "GestaoItens";
@@ -55,5 +67,6 @@
         #endregion
 
         private Button btnCadastrarItem;
+        private Button btnVisualizarItens;
     }
 }

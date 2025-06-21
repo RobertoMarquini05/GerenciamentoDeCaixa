@@ -17,17 +17,24 @@ namespace Caixa.View
         #region Campos
         ItemManager itemManager = new ItemManager();
         #endregion
+
         #region Construtor
         public GestaoItens()
         {
             InitializeComponent();
         }
         #endregion
+
         #region Metodos
         private void btnCadastrarItem_Click(object sender, EventArgs e)
         {
-            CriacaoItem criacaoItem = new CriacaoItem(itemManager);
+            CriacaoItem criacaoItem = new(itemManager);
             criacaoItem.ShowDialog();
+        }
+        private void btnVisualizarItens_Click(object sender, EventArgs e)
+        {
+            VisualizacaoItem visualizacaoItem = new(itemManager);
+            visualizacaoItem.ShowDialog();
         }
         #endregion
     }
